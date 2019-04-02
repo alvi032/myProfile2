@@ -13,7 +13,7 @@
 //     });
 // });
 $(function () {
-    $("#about").click(function () {
+    $("#about, #home, #contact, #portfolio").click(function () {
         $(".forAll").removeClass("col-xl-9 col-9");
         $(".forAll").addClass("col-xl-1 col-1");
         $(".allContent").removeClass("content");
