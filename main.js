@@ -26,12 +26,12 @@ $(function () {
     });
 });*/
 function myFun(column, colName, colContent){
-    $(".forAll").removeClass("col-xl-9 col-9");
-    $(".forAll").addClass("col-xl-1 col-1");
+    $(".forAll").removeClass("col-xl-9 col-sm-9");
+    $(".forAll").addClass("col-xl-1 col-sm-1");
     $(".allContent").removeClass("content");
     $(".allContent").addClass("close");
     $(".verticalOption").removeClass("opened");
-    $(column).addClass("col-xl-9 col-9");
+    $(column).addClass("col-xl-9 col-sm-9");
     $(colName).addClass("opened");
     $(colContent).removeClass("close");
 }
