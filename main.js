@@ -52,3 +52,18 @@ $(document).click(function(e) {
     }
 });
 
+/*
+(function ($) {
+    function mediaSize() {
+        if (window.matchMedia('(min-width: 550px)').matches) {
+            $(".inBody").removeClass("flex-row-reverse");
+            $(".inBody").addClass("flex-column-reverse");
+        } else {
+            $(".inBody").addClass("flex-row-reverse");
+            $(".inBody").removeClass("flex-column-reverse");
+        }
+    };
+
+    mediaSize();
+    window.addEventListener('resize', mediaSize, false);
+})(jQuery);*/
