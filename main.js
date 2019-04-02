@@ -12,6 +12,7 @@
 //         $("#aboutContent").removeClass("close");
 //     });
 // });
+/*
 $(function () {
     $("#about, #home, #contact, #portfolio").click(function () {
         $(".forAll").removeClass("col-xl-9 col-9");
@@ -23,4 +24,31 @@ $(function () {
         $("#menuAbout").addClass("opened");
         $("#aboutContent").removeClass("close");
     });
+});*/
+function myFun(column, colName, colContent){
+    $(".forAll").removeClass("col-xl-9 col-9");
+    $(".forAll").addClass("col-xl-1 col-1");
+    $(".allContent").removeClass("content");
+    $(".allContent").addClass("close");
+    $(".verticalOption").removeClass("opened");
+    $(column).addClass("col-xl-9 col-9");
+    $(colName).addClass("opened");
+    $(colContent).removeClass("close");
+}
+
+
+$(document).click(function(e) {
+    if($(e.target).is("#about")){
+        myFun(".col2", "#menuAbout","#aboutContent");
+    }
+    else if ($(e.target).is("#home")) {
+        myFun(".col1", "#menuHome", "#homeContent");
+    }
+    else if ($(e.target).is("#contact")) {
+        myFun(".col3","#menuContact", "#contactContent");
+    }
+    else if ($(e.target).is("#portfolio")) {
+        myFun(".col4","#menuPortfolio","#portfolioContent");
+    }
 });
+
