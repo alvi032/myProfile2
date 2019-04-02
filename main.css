@@ -1,0 +1,41 @@
+body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.forAll{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+
+}
+.verticalOption{
+    transform: rotate(270deg);
+    white-space: nowrap;
+    display: flex;
+    align-items:center;
+}
+.verticalOption a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    line-height: 5px;
+}
+.content{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.opened{
+    display: none;
+}
+.close{
+    display: none;
+}
