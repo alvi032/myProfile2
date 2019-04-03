@@ -49,7 +49,11 @@ body{
 .close{
     display: none;
 }
-@media (max-width: 550px){
+#homeContent, #aboutContent, #contactContent , #portfolioContent{
+    width: 100vw;
+    height: 75vh;
+}
+@media (max-width: 575px){
     .inBody{
         height: 100vh;
         width: 100%;
